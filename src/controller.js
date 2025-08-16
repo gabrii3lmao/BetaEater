@@ -12,12 +12,14 @@ function processarMensagem(input) {
     // Caso seja no geral → busca correspondência simples
     if (/moggado|mogged|mogg?/i.test(input.mensagem)) {
       return input.responder(pegarAleatorio(frases.moggado));
-    } else if (/sobra|nada|beta|betinha|restou/i.test(input.mensagem)) {
+    } else if (/sobra|nada|beta|betinha|cabousse|brutal|restou/i.test(input.mensagem)) {
       return input.responder(pegarAleatorio(frases.sobraNada));
-    } else if (/over|its/i.test(input.mensagem)) {
+    } else if (/over|its|cabousse|brutal/i.test(input.mensagem)) {
       return input.responder(pegarAleatorio(frases.itsOver));
     } else if (/churrascamento|churras|churrasco/i.test(input.mensagem)) {
       return input.responder(pegarAleatorio(frases.churrascamento));
+    } else if (/sigma|based|chad|jawline/i.test(input.mensagem)){
+      return input.responder(pegarAleatorio(frases.sigma));
     }
 
     // Reação aleatória (10% de chance)
