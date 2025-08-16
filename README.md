@@ -1,4 +1,4 @@
-# 🤓 BetaEater - Discord Bot (desenvolvido por Gabriel)
+# 🤓 BetaEater - Discord Bot 
 
 > "E pro betinha? Sobrou nada."  
 
