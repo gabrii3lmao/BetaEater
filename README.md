@@ -10,8 +10,8 @@ Ele não serve para nada útil na vida real — mas responde com frases insanas 
 ## 🚀 Funcionalidades
 - Responde automaticamente mensagens que contenham palavras-chave como **moggado**, **its over**, **sobrou nada**, ou até **churrascamento**.
 - Traz frases aleatórias a partir de um banco (`db.json`) cuidadosamente selecionado para humilhar qualquer betinha.
+- Agora ele também tem uma ferramenta de gerar nomes aleatórios com base em um banco de dados (também em `db.json`).
 - Foi feito apenas para eu treinar **JavaScript, Node.js e lógica de bots**.  
-
 ---
 
 ## ⚠️ Aviso importante
