@@ -71,5 +71,22 @@
     "beta pergunta, sigma já tá moggando",
     "jawline tão sigma que o betinha evaporou",
     "o brutal sigma só precisa da jawline pra acabar com o beta"
-  ]
+  ],
+
+  "geradorDeNome": {
+    "primeiroNome": 
+    [
+      "joão ", "carlos ", "lucas ", "gabriel ", "André ", "Caio ", "belford ", "Cirilo ", "Blumenal ", "Capixaba ", "Couriço ", "Chupinha ", "caboclo ", "jegue ", "pirula ", "gamador ", "cebolinha ", "Luis ", "Pedro "
+    ],
+    "segundoNome":
+    [
+      "pussy ", "Ronaldo ", "Beta ", "Cheirador ", "Sigma ", "Moggado ", "calador ", "aviãozinho ", "carrasco ", "chupetinha ", "moribundo ", "galanteador ", "fornecedor ", "olheiro ", "boqueteiro ", "Chupa cano "
+    ],
+    "terceiroNome":
+    [
+      "da Bahia", "do crack", "da zona sul", "sem mãe", "caduco", "manco", "espanca avó", "espanca mãe", "do tráfico", "do cangaço", "favelado", "da boca", "da facção"
+    ]
+    
+  }
+  
 }

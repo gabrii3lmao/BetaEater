@@ -1,4 +1,7 @@
 const frases = require("../db.json");
+const { gerarNomes } = require("./utils/nameGenerator");
+
+const { frasesProntas } = require("./utils/nameGenerator"); 
 
 function processarMensagem(input) {
   try {
@@ -8,7 +11,9 @@ function processarMensagem(input) {
       const frase = pegarAleatorio(todasCategorias);
       return input.responder(frase);
     }
-
+    if (/gerar nick|criar nome|gerar nome|criar nick/.test(input.mensagem)){
+    return input.responder(`${frasesProntas()} **${gerarNomes()}**`)
+    }
     // Caso seja no geral → busca correspondência simples
     if (/moggado|mogged|mogg?/i.test(input.mensagem)) {
       return input.responder(pegarAleatorio(frases.moggado));
@@ -16,7 +21,7 @@ function processarMensagem(input) {
       return input.responder(pegarAleatorio(frases.sobraNada));
     } else if (/over|its|cabousse|brutal/i.test(input.mensagem)) {
       return input.responder(pegarAleatorio(frases.itsOver));
-    } else if (/churrascamento|churras|churrasco/i.test(input.mensagem)) {
+    } else if (/churrascamento|churras|churrasco|sobra|oque| sobrou/i.test(input.mensagem)) {
       return input.responder(pegarAleatorio(frases.churrascamento));
     } else if (/sigma|based|chad|jawline/i.test(input.mensagem)){
       return input.responder(pegarAleatorio(frases.sigma));
@@ -24,7 +29,7 @@ function processarMensagem(input) {
 
     // Reação aleatória (10% de chance)
     if (Math.random() < 0.1) {
-      input.reagir("🔥", "🤓");
+      input.reagir("🔥");
     }
   } catch (err) {
     tratarErro(err);
@@ -34,6 +39,7 @@ function processarMensagem(input) {
 function pegarAleatorio(array) {
   return array[Math.floor(Math.random() * array.length)];
 }
+
 
 function tratarErro(err) {
   console.error("❌ Erro no controller:", err);
